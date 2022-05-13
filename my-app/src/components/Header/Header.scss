@@ -1,10 +1,22 @@
-// @use 'styles/colors';
-@use '../../styles/fonts';
+@import '../../styles/_colors';
+@import '../../styles/_fonts';
 
 .Header {
-  font-family: fonts.$mainFont, cursive;
-  font-size: 60px;
+  font-family: $mainFont;
+  font-size: 770%;
   justify-content: center;
-  color: white;
+  color: $casablanca;
+  position: absolute;
+  transform: translate(-50%, -60%);
+  top: 47%;
+  left: 55%;
+}
 
+span {
+  position: absolute;
+  transform: translate(10%, 10%);
+  bottom: 7.9%;
+  right: -70%;
+  color: $punch;
+  width: 100%
 }

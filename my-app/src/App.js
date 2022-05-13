@@ -1,18 +1,18 @@
 import logo from './logo.svg';
 import './App.scss';
 import Header from './components/Header/Header.js';
+import Background from './components/Background/Background.js';
+import Nav from './components/Navigation/Nav.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <a>
-          <Header/>
-        </a>
-      </header>
-
+      <Background>
+        <Header/>
+        <div class="arrow-right"></div>
+      </Background>
       
+      <Nav />
     </div>
   );
 }

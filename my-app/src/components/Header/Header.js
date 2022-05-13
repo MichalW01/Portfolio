@@ -5,7 +5,9 @@ import './Header.scss';
 function Header({}) {
   return (
     <header className="Header">
-     Hello! I'm Mike
+     Hello!<br/>
+     I'm <br/>
+     Mike <span>_</span>
     </header>
   );
 }
