@@ -16,6 +16,11 @@
   transform: translate(5deg);
   top: 35%;
   right: 6%;
+  animation-duration: 8s;
+  animation-name: arrowing;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 
 div.square {
@@ -27,6 +32,11 @@ div.square {
   transform: rotate(55deg);
   top: 55%;
   left: -31%;
+  animation-duration: 4s;
+  animation-name: slidein;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
 }
 
   .circle1 {
@@ -35,8 +45,13 @@ div.square {
     background-color: $goldDrop;
     border-radius: 50%;
     position: absolute;
-    top: -7%;
-    left: -7%;
+    top: -9%;
+    left: -9%;
+    // animation-duration: 20s;
+    // animation-name: moving;
+    // animation-iteration-count: infinite;
+    // animation-direction: normal;
+    // animation-timing-function: linear;
   }
 
   .circle2 {
@@ -48,6 +63,11 @@ div.square {
     position: absolute;
     top: -10%;
     left: -10%;
+    animation-duration: 4s;
+    animation-name: rounding;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
   }
 
   div.pipe {
@@ -59,4 +79,57 @@ div.square {
     transform: rotate(-16deg);
     top: -10%;
     left: -42%; 
+    animation-duration: 4s;
+    animation-name: hiding;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+  }
+
+
+
+  @keyframes slidein {
+    from {
+      width: 10%;
+      transform: rotate(0deg);
+    }
+
+    50% {
+      width: 20%;
+      
+    }
+
+    to {
+      width: 10%;
+      transform: rotate(180deg);
+    }
+  }
+
+  @keyframes rounding {
+    from { top: 0px;}
+    20% {top: 160px}
+    30% {left: 120px}
+    40% {left: 140px}
+    50% {top: -10px}
+    80% {left: -10px}
+    to { top: 0px;}
+  }
+
+  @keyframes arrowing {
+    from {
+    opacity: 0;
+    }
+    50% {
+      opacity: 1
+    }
+  to {
+      transform: rotate(360deg);
+      opacity: 0;
+  }
+  }
+
+  @keyframes hiding {
+    from {
+
+    }
   }
